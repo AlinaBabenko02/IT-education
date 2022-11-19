@@ -1,0 +1,49 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.header h1 {
+  background-color: #cce6fa;
+  margin-bottom: 100px;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  padding: 0 60px;
+}
+.block img {
+  width: 200px;
+  margin-right: 30px;
+}
+.block div {
+  margin: auto 0;
+}
+.js {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button {
+  width: fit-content;
+  border-radius: 10px;
+  padding: 20px 40px;
+  border: 3px solid #f7bc6f;
+  background-color: #ee4a41;
+  margin: auto;
+  cursor: pointer;
+}
+.button div {
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #000000;
+}

@@ -24,7 +24,7 @@ const tabs = [
 export const Sidebar = () => {
   return (
     <div className={s.root}>
-      <div className={s.logo}>
+      <button className={s.logo}>
         <img src="logo.svg" alt="logo" />
         <div className={s.logoText}>
           <Text color="black" size="l">
@@ -37,7 +37,7 @@ export const Sidebar = () => {
             for children
           </Text>
         </div>
-      </div>
+      </button>
 
       {tabs.map((tab) => (
         <NavigationTab label={tab.label} />
