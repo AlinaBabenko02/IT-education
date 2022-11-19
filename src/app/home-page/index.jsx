@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "../../ui";
+import { Text, Button } from "../../ui";
 import s from "./styles.module.css";
 
 export const HomePage = () => (
@@ -32,10 +32,6 @@ export const HomePage = () => (
       anything. And I want to teach you the basics of this language. If you are
       interested then follow me!
     </Text>
-    <button className={s.button}>
-      <Text color="orange2" size="l">
-        Start learning Trip
-      </Text>
-    </button>
+    <Button>Start learning Trip</Button>
   </div>
 );
