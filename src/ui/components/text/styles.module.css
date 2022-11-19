@@ -1,0 +1,39 @@
+.color--green1 {
+  color: #00605e;
+}
+.color--green2 {
+  color: #aad8c6;
+}
+
+.color--orange1 {
+  color: #f7990d;
+}
+
+.color--orange2 {
+  color: #f7bc6f;
+}
+
+.color--red1 {
+  color: #ee4a41;
+}
+.color--red2 {
+  color: #e08383;
+}
+
+.color--black {
+  color: #000000;
+}
+.color--white {
+  color: #ffffff;
+}
+
+.size--s {
+  font-size: 14px;
+}
+
+.size--m {
+  font-size: 18px;
+}
+.size--l {
+  font-size: 24px;
+}
