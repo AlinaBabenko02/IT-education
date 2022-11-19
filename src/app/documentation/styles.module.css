@@ -1,0 +1,49 @@
+.root {
+  width: 100%;
+  padding: 20px;
+}
+.rootHeader {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.dropdown {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.dropdownHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid #f7990d;
+  padding: 5px;
+  background-color: #f7bc6f;
+  border-radius: 5px 5px 0 0;
+}
+.dropdownHeader > div {
+  font-weight: bold;
+}
+
+.dropdownButton {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.dropdownButton img {
+  height: 26px;
+  width: 26px;
+  margin: auto;
+}
+.reverse {
+  transform: rotate(0.5turn);
+}
+.dropdownBody {
+  border: 2px solid #f7990d;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+}
+
+.blockName {
+  background-color: bisque;
+  margin: 5px 0;
+}
