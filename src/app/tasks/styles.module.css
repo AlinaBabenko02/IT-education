@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+  justify-content: center;
+}
+.header {
+  width: fit-content;
+  margin: 0 auto 100px auto;
+}
+
+.buttons {
+  margin: auto 20px 20px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.nextButton {
+  margin-left: 30px;
+}
+.disabled {
+  cursor: pointer;
+  pointer-events: none;
+}
+.disabled div {
+  color: gray;
+}
