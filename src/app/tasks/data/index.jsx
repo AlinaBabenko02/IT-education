@@ -1,1 +1,13 @@
 export { Alert } from "./alert";
+export { CreateFunc } from "./create-func";
+export { ForLoop } from "./for-loop";
+export { Comment } from "./comment";
+export { Array } from "./array";
+export { Round } from "./round";
+export { Onclick } from "./onclick";
+export { Boolean } from "./boolean";
+export { Equal } from "./equal";
+export { Output } from "./output";
+export { ArrayPop } from "./array-pop";
+export { UpperCase } from "./upper-case";
+export { Object } from "./object";
