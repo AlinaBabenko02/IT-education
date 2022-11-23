@@ -14,3 +14,6 @@
 .buttons * {
   margin: 0;
 }
+.hidden {
+  visibility: hidden;
+}

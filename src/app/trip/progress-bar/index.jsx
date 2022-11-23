@@ -19,7 +19,8 @@ const steps = [
 ];
 
 export const ProgressBar = () => {
-  const currentStep = 6;
+  const currentStep = +localStorage.getItem("currentStep");
+  const openedStep = +localStorage.getItem("openedStep");
   return (
     <div className={s.root}>
       {steps.map((step) => (
@@ -28,17 +29,26 @@ export const ProgressBar = () => {
             className={cx(
               s.block,
               currentStep === step.value && s.blockCurrent,
-              currentStep < step.value && s.blockFuture
+              openedStep < step.value && s.blockFuture
             )}
           >
-            <img src="track-cat.svg" alt="" />
+            <img
+              src="track-cat.svg"
+              alt=""
+              onClick={() => {
+                if (step.value <= openedStep) {
+                  localStorage.setItem("currentStep", step.value);
+                  window.location.reload();
+                }
+              }}
+            />
             <Text size="s" color={currentStep === step.value && "red1"}>
               {step.label}
             </Text>
           </div>
           {step.value !== steps.length - 1 && (
             <div
-              className={cx(s.line, currentStep <= step.value && s.lineFuture)}
+              className={cx(s.line, openedStep <= step.value && s.lineFuture)}
             />
           )}
         </>

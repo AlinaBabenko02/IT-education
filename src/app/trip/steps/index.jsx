@@ -1,11 +1,27 @@
-export { Intro } from "./intro";
-export { Basics } from "./basics";
-export { Variables } from "./variables";
-export { Types } from "./types";
-export { Array } from "./array";
-export { Object } from "./object";
-export { Operators } from "./operators";
-export { If } from "./if";
-export { Loop } from "./loop";
-export { Functions } from "./functions";
-export { Finish } from "./finish";
+import React from "react";
+
+import { Intro } from "./intro";
+import { Basics } from "./basics";
+import { Variables } from "./variables";
+import { Types } from "./types";
+import { Array } from "./array";
+import { Object } from "./object";
+import { Operators } from "./operators";
+import { If } from "./if";
+import { Loop } from "./loop";
+import { Functions } from "./functions";
+import { Finish } from "./finish";
+
+export const stepsData = [
+  <Intro />,
+  <Basics />,
+  <Variables />,
+  <Types />,
+  <Array />,
+  <Object />,
+  <Operators />,
+  <If />,
+  <Loop />,
+  <Functions />,
+  <Finish />,
+];
