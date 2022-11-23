@@ -1,0 +1,38 @@
+.root div {
+  margin-bottom: 24px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.borderWithShadow {
+  padding: 20px 20px 0;
+  border: 1px solid rgba(100, 100, 111, 0.3);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row div {
+  margin: 0 0 0 20px;
+}
+
+.finish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.finish img {
+  margin: 0 auto 60px;
+}
+
+.finishText {
+  background-color: #cce6fa;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

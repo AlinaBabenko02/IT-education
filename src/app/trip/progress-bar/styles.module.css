@@ -1,7 +1,7 @@
 .root {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: 10px auto 40px auto;
   height: 81px;
 }
 .block {
@@ -12,7 +12,7 @@
 .block img {
   background-color: #e08383;
   border-radius: 50%;
-  width: 30px;
+  width: 36px;
   padding: 10px;
   border: 3px solid #e08383;
   margin-bottom: 4px;

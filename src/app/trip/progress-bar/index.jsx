@@ -6,17 +6,16 @@ import s from "./styles.module.css";
 
 const steps = [
   { label: "Intro", value: 0 },
-  { label: "1", value: 1 },
-  { label: "2", value: 2 },
-  { label: "3", value: 3 },
-  { label: "4", value: 4 },
-  { label: "5", value: 5 },
-  { label: "6", value: 6 },
-  { label: "7", value: 7 },
-  { label: "8", value: 8 },
-  { label: "9", value: 9 },
-  { label: "10", value: 10 },
-  { label: "11", value: 11 },
+  { label: "Basics", value: 1 },
+  { label: "Variables", value: 2 },
+  { label: "Types", value: 3 },
+  { label: "Array", value: 4 },
+  { label: "Object", value: 5 },
+  { label: "Operators", value: 6 },
+  { label: "If", value: 7 },
+  { label: "loop", value: 8 },
+  { label: "Functions", value: 9 },
+  { label: "Finish", value: 10 },
 ];
 
 export const ProgressBar = () => {
@@ -33,7 +32,7 @@ export const ProgressBar = () => {
             )}
           >
             <img src="track-cat.svg" alt="" />
-            <Text size="m" color={currentStep === step.value && "red1"}>
+            <Text size="s" color={currentStep === step.value && "red1"}>
               {step.label}
             </Text>
           </div>

@@ -1,0 +1,11 @@
+export { Intro } from "./intro";
+export { Basics } from "./basics";
+export { Variables } from "./variables";
+export { Types } from "./types";
+export { Array } from "./array";
+export { Object } from "./object";
+export { Operators } from "./operators";
+export { If } from "./if";
+export { Loop } from "./loop";
+export { Functions } from "./functions";
+export { Finish } from "./finish";
