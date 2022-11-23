@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Text, Button } from "../../../ui";
 
 import s from "./styles.module.css";
@@ -16,6 +17,8 @@ export const Finish = () => (
       </Text>
     </div>
     <img src="cat-happy.svg" alt="" width="100px" />
-    <Button>Go to TASKS!</Button>
+    <Link to="/tasks" style={{ margin: "auto" }}>
+      <Button>Go to TASKS!</Button>
+    </Link>
   </div>
 );

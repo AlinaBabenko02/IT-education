@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Text, Button } from "../../ui";
 import s from "./styles.module.css";
 
@@ -32,6 +33,8 @@ export const HomePage = () => (
       anything. And I want to teach you the basics of this language. If you are
       interested then follow me!
     </Text>
-    <Button>Start learning Trip</Button>
+    <Link to="/trip" style={{ margin: "auto" }}>
+      <Button>Start learning Trip</Button>
+    </Link>
   </div>
 );
