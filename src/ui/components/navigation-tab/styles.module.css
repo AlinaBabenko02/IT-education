@@ -1,0 +1,34 @@
+.tab {
+  display: flex;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  justify-content: start;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.tab:hover div {
+  color: white;
+}
+
+.tab div {
+  font-weight: bold;
+}
+
+.tabActive {
+  cursor: default;
+  background-color: #59b5b5;
+}
+
+.tabActive div {
+  color: white;
+}
+
+.tabArrow {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+}

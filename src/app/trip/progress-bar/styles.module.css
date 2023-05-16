@@ -19,8 +19,8 @@
   cursor: pointer;
 }
 .blockCurrent img {
-  border-color: #c70c02;
-  background-color: #c70c02;
+  border-color: #f6454f;
+  background-color: #f6454f;
 }
 .blockCurrent div {
   font-weight: bold;

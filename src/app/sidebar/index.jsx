@@ -1,28 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import cx from "classnames";
-import { Text } from "../../ui";
+import { Text, NavigationTab } from "../../ui";
 
 import s from "./styles.module.css";
 
-const NavigationTab = ({ label, link, activeTab, setActiveTab }) => {
-  const isActive = activeTab === link;
-
-  return (
-    <Link
-      to={`/${link}`}
-      className={cx(s.button, isActive && s.buttonActive)}
-      onClick={() => {
-        setActiveTab(link);
-      }}
-    >
-      {isActive && <span className={s.circle} />}
-      <Text color="green1" size="l">
-        {label}
-      </Text>
-    </Link>
-  );
-};
 const tabs = [
   { label: "Trip", link: "trip" },
   { label: "Tasks", link: "tasks" },
@@ -56,7 +37,7 @@ export const Sidebar = () => {
         <NavigationTab
           label={tab.label}
           link={tab.link}
-          activeTab={activeTab}
+          isActive={activeTab === tab.link}
           setActiveTab={setActiveTab}
         />
       ))}
