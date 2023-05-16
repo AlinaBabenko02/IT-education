@@ -1,4 +1,5 @@
 import React from "react";
+import Paper from "@mui/material/Paper";
 import { Text } from "../../../ui";
 
 import s from "./styles.module.css";
@@ -26,7 +27,7 @@ export const Intro = () => (
       However, the Java language was very popular at the time and it was decided
       that positioning JavaScript as Java's "little brother" would be helpful.
     </Text>
-    <div className={s.borderWithShadow}>
+    <Paper elevation={10} className={s.borderWithShadow}>
       <Text size="m" color="orange2" className={s.bold}>
         Programmers spend most of their working time in code editors. <br />
         There are two main types of editors: IDE and lightweight editors. Many
@@ -58,6 +59,6 @@ export const Intro = () => (
         <img src="cat-head.svg" alt="" width="30px" />
         <Text>Vim</Text>
       </div>
-    </div>
+    </Paper>
   </div>
 );

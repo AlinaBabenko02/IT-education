@@ -19,32 +19,27 @@
   padding: 5px;
   background-color: #fad5a5;
   border-radius: 5px 5px 0 0;
+  width: 100%;
+  cursor: pointer;
 }
 .dropdownHeader > div {
   font-weight: bold;
 }
 
-.dropdownButton {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+.dropdownHeader svg {
+  margin: auto 0 auto auto;
+  color: #e8a702;
+  width: 32px;
+  height: 32px;
 }
-.dropdownButton img {
-  height: 26px;
-  width: 26px;
-  margin: auto;
-}
-.reverse {
-  transform: rotate(0.5turn);
-}
+
 .dropdownBody {
   border: 3px solid #e8a702;
   border-radius: 0 0 5px 5px;
   padding: 5px;
+  background-color: white;
 }
 
 .blockName {
-  background-color: #e4f0eb;
   margin: 5px 0;
 }

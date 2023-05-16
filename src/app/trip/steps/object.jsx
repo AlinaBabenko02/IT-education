@@ -1,5 +1,6 @@
 import React from "react";
 import cx from "classnames";
+import Paper from "@mui/material/Paper";
 import { Text } from "../../../ui";
 
 import s from "./styles.module.css";
@@ -49,11 +50,11 @@ export const Object = () => (
       map(), keys(), values(), freeze()
     </Text>
 
-    <div className={cx(s.row, s.borderWithShadow)}>
+    <Paper elevation={10} className={cx(s.row, s.borderWithShadow)}>
       <img src="cat-heart-eyes.svg" alt="" width="50px" />
       <Text size="h1" color="red2">
         Congratulations! You know all kinds of variables in JavaScript.
       </Text>
-    </div>
+    </Paper>
   </div>
 );

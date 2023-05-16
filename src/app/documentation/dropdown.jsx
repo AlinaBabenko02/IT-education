@@ -1,25 +1,30 @@
 import React, { useState } from "react";
-import cx from "classnames";
+import Collapse from "@mui/material/Collapse";
+import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
+import KeyboardArrowUpOutlinedIcon from "@mui/icons-material/KeyboardArrowUpOutlined";
 import { Text } from "../../ui";
 import s from "./styles.module.css";
 
 export const Dropdown = ({ label, body }) => {
   const [isOpen, setOpen] = useState(false);
-
+  console.log(isOpen);
   return (
     <div className={s.dropdown}>
-      <div className={s.dropdownHeader}>
+      <button onClick={() => setOpen(!isOpen)} className={s.dropdownHeader}>
         <Text size="l" color="black">
           {label}
         </Text>
-        <button
-          onClick={() => setOpen(!isOpen)}
-          className={cx(s.dropdownButton, !isOpen && s.reverse)}
-        >
-          <img src="arrow.svg" alt="arrow" />
-        </button>
-      </div>
-      {isOpen && <div className={s.dropdownBody}>{body}</div>}
+
+        {isOpen ? (
+          <KeyboardArrowUpOutlinedIcon />
+        ) : (
+          <KeyboardArrowDownOutlinedIcon />
+        )}
+      </button>
+
+      <Collapse in={isOpen} className={s.dropdownBody}>
+        {body}
+      </Collapse>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import cx from "classnames";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
 import {
   Alert,
   CreateFunc,
@@ -23,6 +25,7 @@ export const Tasks = () => {
   const [randomTask, setRandomTask] = useState(Math.floor(Math.random() * 13));
   const [taskResult, setTaskResult] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [resultOpened, setResultOpened] = useState(false);
 
   const tasksData = [
     { component: <Alert setTaskResult={setTaskResult} />, answer: "alert" },
@@ -59,31 +62,50 @@ export const Tasks = () => {
   ];
 
   return (
-    <div className={s.root}>
-      <Text color="green1" size="h1" className={s.header}>
-        JavaScript testing
-      </Text>
-      {tasksData[randomTask].component}
+    <>
+      <div className={s.root}>
+        <Text color="green1" size="h1" className={s.header}>
+          JavaScript testing
+        </Text>
+        {tasksData[randomTask].component}
 
-      <div className={s.buttons}>
-        <Button
-          onClick={() =>
-            setSuccess(taskResult === tasksData[randomTask].answer)
-          }
-        >
-          Check answer
-        </Button>
-        <Button
-          onClick={() => {
-            setRandomTask(Math.floor(Math.random() * tasksData.length));
-            setSuccess(null);
-          }}
-          className={cx(s.nextButton, !success && s.disabled)}
-          type="orange"
-        >
-          Next task
-        </Button>
+        <div className={s.buttons}>
+          <Button
+            onClick={() => {
+              const isSuccess = taskResult === tasksData[randomTask].answer;
+              setSuccess(isSuccess);
+              setResultOpened(true);
+            }}
+          >
+            Check answer
+          </Button>
+          <Button
+            onClick={() => {
+              setRandomTask(Math.floor(Math.random() * tasksData.length));
+              setSuccess(null);
+            }}
+            className={cx(s.nextButton, !success && s.disabled)}
+            type="orange"
+          >
+            Next task
+          </Button>
+        </div>
       </div>
-    </div>
+      <Snackbar
+        open={resultOpened}
+        autoHideDuration={5000}
+        onClose={() => setResultOpened(false)}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      >
+        <MuiAlert
+          onClose={() => setResultOpened(false)}
+          severity={success ? "success" : "error"}
+          elevation={6}
+          variant="filled"
+        >
+          {success ? "This is a right answer!" : "This is a wrong answer!"}
+        </MuiAlert>
+      </Snackbar>
+    </>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Paper from "@mui/material/Paper";
 import { Text } from "../../../ui";
 
 import s from "./styles.module.css";
@@ -33,7 +34,7 @@ export const Variables = () => (
       A variable can only be declared once. When the value changes, the old data
       is removed from the variable: Redeclaring the same variable is an error.
     </Text>
-    <div className={s.borderWithShadow}>
+    <Paper elevation={10} className={s.borderWithShadow}>
       <Text size="m" color="red1">
         In older scripts, you can also find another keyword: var instead of let:
       </Text>
@@ -44,7 +45,7 @@ export const Variables = () => (
         The var keyword is almost the same as let. It declares a variable, but
         in a slightly different, "legacy" way.
       </Text>
-    </div>
+    </Paper>
     <Text size="m" color="red1">
       There is a list of reserved words that cannot be used as variable names
       because they are used by the language itself. <br />

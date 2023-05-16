@@ -7,7 +7,7 @@ import s from "./styles.module.css";
 const tabs = [
   { label: "Trip", link: "trip" },
   { label: "Tasks", link: "tasks" },
-  { label: "Documentation", link: "documentation" },
+  { label: "Handbook", link: "documentation" },
 ];
 
 export const Sidebar = () => {

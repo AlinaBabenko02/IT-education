@@ -7,9 +7,9 @@
 }
 
 .borderWithShadow {
-  padding: 20px 20px 0;
-  border: 1px solid rgba(100, 100, 111, 0.3);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 55%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .row {
