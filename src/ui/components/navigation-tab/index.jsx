@@ -5,10 +5,16 @@ import ForwardIcon from "@mui/icons-material/Forward";
 import { Text } from "../text/index";
 import s from "./styles.module.css";
 
-export const NavigationTab = ({ label, link, isActive, setActiveTab }) => (
+export const NavigationTab = ({
+  label,
+  link,
+  isActive,
+  setActiveTab,
+  className,
+}) => (
   <Link
     to={`/${link}`}
-    className={cx(s.tab, isActive && s.tabActive)}
+    className={cx(s.tab, isActive && s.tabActive, className)}
     onClick={() => {
       setActiveTab(link);
     }}

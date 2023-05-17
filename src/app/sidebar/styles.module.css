@@ -39,3 +39,6 @@
 a {
   text-decoration: none;
 }
+.parents div {
+  text-decoration: underline;
+}

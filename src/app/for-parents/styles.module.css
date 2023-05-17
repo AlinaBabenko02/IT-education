@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecdfcd;
+  padding: 0 40px;
+}
+
+.root img {
+  margin: 0 auto;
+}

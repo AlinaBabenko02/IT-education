@@ -8,6 +8,7 @@ const tabs = [
   { label: "Trip", link: "trip" },
   { label: "Tasks", link: "tasks" },
   { label: "Handbook", link: "documentation" },
+  { label: "For Parents", link: "for-parents", className: s.parents },
 ];
 
 export const Sidebar = () => {
@@ -39,6 +40,7 @@ export const Sidebar = () => {
           link={tab.link}
           isActive={activeTab === tab.link}
           setActiveTab={setActiveTab}
+          className={tab.className}
         />
       ))}
     </div>
