@@ -51,7 +51,7 @@ export const Object = () => (
     </Text>
 
     <Paper elevation={10} className={cx(s.row, s.borderWithShadow)}>
-      <img src="cat-heart-eyes.svg" alt="" width="50px" />
+      <img src="cat-heart-eyes.svg" alt="" width="50px" className={s.cat} />
       <Text size="h1" color="red2">
         Congratulations! You know all kinds of variables in JavaScript.
       </Text>

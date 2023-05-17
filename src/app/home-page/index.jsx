@@ -34,7 +34,7 @@ export const HomePage = () => (
       interested then follow me!
     </Text>
     <Link to="/trip" style={{ margin: "auto" }}>
-      <Button>Start learning Trip</Button>
+      <Button className={s.rootButton}>Start learning Trip</Button>
     </Link>
   </div>
 );

@@ -16,7 +16,7 @@ export const Finish = () => (
         the task section and try your hand at it!
       </Text>
     </div>
-    <img src="cat-happy.svg" alt="" width="100px" />
+    <img src="cat-happy.svg" alt="" width="100px" className={s.finishCat} />
     <Link to="/tasks" style={{ margin: "auto" }}>
       <Button>Go to TASKS!</Button>
     </Link>
