@@ -13,6 +13,7 @@ import {
   Elephant,
   Tiger,
   Hippopotamus,
+  Bear,
 } from "./animals/index";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -25,6 +26,7 @@ const animals = [
   "elephant",
   "tiger",
   "hippopotamus",
+  "bear",
 ];
 
 export const ZooGame = () => {
@@ -54,6 +56,7 @@ export const ZooGame = () => {
           <Elephant />
           <Tiger />
           <Hippopotamus />
+          <Bear />
         </div>
       </div>
 

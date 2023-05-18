@@ -86,7 +86,11 @@
   top: 280px;
   right: 300px;
 }
-
+.bear {
+  position: absolute;
+  top: 180px;
+  left: 395px;
+}
 @keyframes myAnim {
   0% {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
