@@ -30,7 +30,7 @@ export const HomePage = () => (
         JavaScript
       </Text>
     </div>
-    <Text color="black" size="l" className={s.block}>
+    <Text color="black" size="l" className={s.blockJS}>
       JS is one of the most popular programming languages. With it, you can do
       anything. And I want to teach you the basics of this language. If you are
       interested then follow me!
