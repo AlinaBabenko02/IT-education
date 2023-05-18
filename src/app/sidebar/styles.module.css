@@ -19,13 +19,8 @@
   cursor: pointer;
 }
 .logo img {
-  height: 70px;
-  width: 70px;
-  background-color: white;
-  border-radius: 24%;
-  border: 4px solid #f6454f;
-  padding: 8px;
-  margin-right: 4px;
+  border-radius: 50%;
+  margin: 0 7px;
 }
 .logoText {
   margin-top: 12px;

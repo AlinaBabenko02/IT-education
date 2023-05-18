@@ -20,13 +20,10 @@ export const Sidebar = () => {
     <div className={s.root}>
       <Link to="/home" onClick={() => setActiveTab("home")}>
         <button className={s.logo}>
-          <img src="logo.svg" alt="logo" />
+          <img src="logo.jpg" alt="logo" width={110} />
           <div className={s.logoText}>
             <Text color="black" size="l">
               IT education
-            </Text>
-            <Text color="red1" size="m">
-              BASICS
             </Text>
             <Text color="red1" size="m" className={s.logoChild}>
               for children
