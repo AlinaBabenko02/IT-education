@@ -13,4 +13,52 @@
   background-size: auto 680px;
   height: 680px;
   content: "";
+  position: relative;
+}
+.animal {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.animalSad {
+  animation: myAnim 1s ease 0s infinite normal forwards;
+}
+.monkey {
+  position: absolute;
+  bottom: 100px;
+  right: 370px;
+}
+.crocodile {
+  position: absolute;
+  bottom: 100px;
+  left: 170px;
+}
+.bird {
+  position: absolute;
+  top: 20px;
+}
+.elephant {
+  position: absolute;
+  top: 280px;
+  right: 550px;
+}
+.tiger {
+  position: absolute;
+  top: 300px;
+  left: 150px;
+}
+.hippopotamus {
+  position: absolute;
+  top: 280px;
+  right: 300px;
+}
+
+@keyframes myAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
 }

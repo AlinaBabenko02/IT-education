@@ -6,6 +6,14 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { Text, Button } from "../../ui";
 import s from "./styles.module.css";
+import {
+  Monkey,
+  Crocodile,
+  Bird,
+  Elephant,
+  Tiger,
+  Hippopotamus,
+} from "./animals/index";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
@@ -26,7 +34,14 @@ export const ZooGame = () => {
         <Text size="h1" color="orange1">
           Let's make all animals happy!
         </Text>
-        <div className={s.zoo} />
+        <div className={s.zoo}>
+          <Monkey />
+          <Crocodile />
+          <Bird />
+          <Elephant />
+          <Tiger />
+          <Hippopotamus />
+        </div>
       </div>
 
       <Dialog
@@ -34,7 +49,6 @@ export const ZooGame = () => {
         TransitionComponent={Transition}
         keepMounted
         onClose={() => setTipOpened(false)}
-        aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle>
           <Text size="l" color="green1">
