@@ -6,7 +6,7 @@ import s from "./styles.module.css";
 
 const tabs = [
   { label: "Trip", link: "trip" },
-  { label: "Zoo-Game", link: "zoo" },
+  { label: "Zoo", link: "zoo" },
   { label: "Tasks", link: "tasks" },
   { label: "Handbook", link: "documentation" },
   { label: "For Parents", link: "for-parents", className: s.parents },
