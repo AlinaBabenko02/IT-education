@@ -6,7 +6,9 @@ import s from "./styles.module.css";
 export const HomePage = () => (
   <div className={s.root}>
     <div className={s.header}>
-      <h1> Hi dear friend! My name is Kitty.</h1>
+      <Text color="black" size="h1" className={s.headerText}>
+        Hi dear friend! My name is Kitty.
+      </Text>
       <img src="cat.svg" alt="cat" />
     </div>
 
@@ -19,7 +21,7 @@ export const HomePage = () => (
       </Text>
     </div>
 
-    <div className={s.block}>
+    <div className={s.blockJS}>
       <Text color="orange1" size="l">
         I'm clever cat-programmer and i want to share my knowleges with you! I
         suggest starting with &nbsp;
