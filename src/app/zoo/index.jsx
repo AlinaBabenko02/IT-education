@@ -18,9 +18,20 @@ import {
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
+const animals = [
+  "monkey",
+  "crocodile",
+  "bird",
+  "elephant",
+  "tiger",
+  "hippopotamus",
+];
 
 export const ZooGame = () => {
   const [tipOpened, setTipOpened] = useState(true);
+  const allAnimalsHappy = animals.every(
+    (animal) => localStorage.getItem(animal) === "happy"
+  );
 
   useEffect(() => {
     setTimeout(() => {
@@ -31,8 +42,10 @@ export const ZooGame = () => {
   return (
     <>
       <div className={s.root}>
-        <Text size="h1" color="orange1">
-          Let's make all animals happy!
+        <Text size="h1" color="orange1" className={allAnimalsHappy && s.header}>
+          {allAnimalsHappy
+            ? "All animals are happy!"
+            : "Let's make all animals happy!"}
         </Text>
         <div className={s.zoo}>
           <Monkey />
